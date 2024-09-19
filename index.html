@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Formulario Multi Etapa</title>
+  </head>
+  <body>
+    <div class="container">
+      <form>
+        <header>
+          <ul id="label-steps">
+            <li class="item-step">
+              <span class="ativo">1</span>
+              <h3>Contato</h3>
+            </li>
+            <img src="img/Vector.png" alt="" />
+            <li class="item-step">
+              <span>2</span>
+              <h3>Empresa</h3>
+            </li>
+            <img src="img/Vector.png" alt="" />
+            <li class="item-step">
+              <span>3</span>
+              <h3>Projeto</h3>
+            </li>
+          </ul>
+        </header>
+
+        <div id="line"></div>
+
+        <div class="step" id="step1">
+          <div>
+            <label for="">Nome</label>
+            <input type="text" placeholder="Como prefere ser chamado" />
+          </div>
+          <div>
+            <label for="">Email</label>
+            <input type="text" placeholder="Digite seu email" />
+          </div>
+        </div>
+
+        <div class="step" id="step2">
+          <div>
+            <label for="">Nome da empresa</label>
+            <input type="text" placeholder="Qual o nome da empresa" />
+          </div>
+          <div>
+            <label for="">Número de funcionários</label>
+            <input type="text" placeholder="Qual o nome da empresa" />
+          </div>
+        </div>
+
+        <div class="step" id="step3">
+          <div>
+            <label for="">Objetivos do Projeto</label>
+            <textarea
+              rows="4"
+              placeholder="Descreva quais objetivos desse projeto"
+              id=""
+            ></textarea>
+          </div>
+        </div>
+
+        <div id="button-actions">
+          <button id="prevStep">Voltar</button>
+          <button id="prevNext">Continuar</button>
+        </div>
+      </form>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
